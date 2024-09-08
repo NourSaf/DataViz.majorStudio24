@@ -72,5 +72,4 @@ different ways.
 the reason why 0.5 - 0.2 = 0.3 is precise is because of the binary reperesntation
 of both 0.5 and 0.2 which is precise. 
 See: https://learn.microsoft.com/en-us/cpp/build/ieee-floating-point-representation?view=msvc-170
-
 */ 
