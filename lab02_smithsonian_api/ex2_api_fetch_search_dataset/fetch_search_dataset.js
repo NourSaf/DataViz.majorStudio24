@@ -18,10 +18,10 @@ const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 // constructing the initial search query
 // const search =  'mask AND unit_code:"FSG"';
 
-/* Here the count raw is +15k which is not matching the result I get at https://collections.si.edu/search/ */
+/* Here the rawCount is +15k which is not matching the result I get at https://collections.si.edu/search/ */
 // const search =  `Portrait AND unit_code:"NPG" AND online_media_type:"Images"`;
 
-/* Here the count raw is 14466, which very close to the resulte at https://collections.si.edu/search/  14,467 */
+/* Here the rawCount is 14466, which very close to the resulte at https://collections.si.edu/search/  14,467 */
 const search =  `unit_code:"NPG" AND online_visual_material:true`;
 
 
@@ -43,7 +43,7 @@ function fetchSearchData(searchTerm) {
       
       // constructing search queries to get all the rows of data
       // you can change the page size
-      let pageSize = 6000;
+      let pageSize = 1000;
       let numberOfQueries = Math.ceil(data.response.rowCount / pageSize);
       console.log(numberOfQueries)
       for(let i = 0; i < numberOfQueries; i++) {
