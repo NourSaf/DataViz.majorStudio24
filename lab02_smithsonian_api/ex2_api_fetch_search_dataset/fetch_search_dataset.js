@@ -2,15 +2,27 @@
 // check API documentation for search here: http://edan.si.edu/openaccess/apidocs/#api-search-search
 // Using this data set https://collections.si.edu/search/results.htm?q=Flowers&view=grid&fq=data_source%3A%22Cooper+Hewitt%2C+Smithsonian+Design+Museum%22&fq=online_media_type%3A%22Images%22&media.CC0=true&fq=object_type:%22Embroidery+%28visual+works%29%22
 
+
+/* 
+To restrict queries for only records with associated media:
+q=online_visual_material:true
+*/
+
+
 // put your API key here;
-const apiKey = "";  
+const apiKey = "VZ5cjlqrFkjE0ErAhByXgVBkgohNeLBNC1ZaDcSb";  
 
 // search base URL
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 
 // constructing the initial search query
 // const search =  'mask AND unit_code:"FSG"';
-const search =  `Flowers AND unit_code:"CHNDM" AND object_type:"Embroidery (visual works)" AND online_media_type:"Images"`;
+
+/* Here the count raw is +15k which is not matching the result I get at https://collections.si.edu/search/ */
+// const search =  `Portrait AND unit_code:"NPG" AND online_media_type:"Images"`;
+
+/* Here the count raw is 14466, which very close to the resulte at https://collections.si.edu/search/  14,467 */
+const search =  `unit_code:"NPG" AND online_visual_material:true`;
 
 
 // array that we will write into
@@ -31,7 +43,7 @@ function fetchSearchData(searchTerm) {
       
       // constructing search queries to get all the rows of data
       // you can change the page size
-      let pageSize = 1000;
+      let pageSize = 6000;
       let numberOfQueries = Math.ceil(data.response.rowCount / pageSize);
       console.log(numberOfQueries)
       for(let i = 0; i < numberOfQueries; i++) {
