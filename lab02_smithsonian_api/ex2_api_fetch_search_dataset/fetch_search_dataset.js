@@ -22,7 +22,7 @@ const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 // const search =  `Portrait AND unit_code:"NPG" AND online_media_type:"Images"`;
 
 /* Here the rawCount is 14466, which very close to the resulte at https://collections.si.edu/search/  14,467 */
-const search =  `unit_code:"NPG" AND online_visual_material:true`;
+const search =  `Male unit_code:"NPG" AND online_visual_material:true`;
 
 
 // array that we will write into
