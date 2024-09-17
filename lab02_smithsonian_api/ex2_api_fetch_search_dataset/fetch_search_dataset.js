@@ -10,7 +10,7 @@ q=online_visual_material:true
 
 
 // put your API key here;
-const apiKey = "VZ5cjlqrFkjE0ErAhByXgVBkgohNeLBNC1ZaDcSb";  
+const apiKey = "FwhGWdBKEV6OflJzyscnxRaFmpYDkNtipBNx3yVS";  
 
 // search base URL
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
@@ -22,7 +22,7 @@ const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 // const search =  `Portrait AND unit_code:"NPG" AND online_media_type:"Images"`;
 
 /* Here the rawCount is 14466, which very close to the resulte at https://collections.si.edu/search/  14,467 */
-const search =  `unit_code:"NPG" AND online_visual_material:true`;
+const search =  `unit_code:"NMNHENTO" AND online_visual_material:true`;
 
 
 // array that we will write into
@@ -43,7 +43,7 @@ function fetchSearchData(searchTerm) {
       
       // constructing search queries to get all the rows of data
       // you can change the page size
-      let pageSize = 1000;
+      let pageSize = 100000;
       let numberOfQueries = Math.ceil(data.response.rowCount / pageSize);
       console.log(numberOfQueries)
       for(let i = 0; i < numberOfQueries; i++) {
@@ -90,12 +90,17 @@ function addObject(objectData) {
   let currentPlace = "";
   if(objectData.content.indexedStructured.place) {
     currentPlace = objectData.content.indexedStructured.place[0];
-  }
+  } 
 
   myArray.push({
-    id: objectData.id,
-    title: objectData.title,
-    link: objectData.content.descriptiveNonRepeating.record_link,
+    A_id: objectData.id,
+    name: objectData.title,
+    class: objectData.content.indexedStructured.tax_class[0],
+    family: objectData.content.indexedStructured.tax_family[0],
+    tax_kingdom: objectData.content.indexedStructured.tax_kingdom[0],
+    Topic: objectData.content.indexedStructured.topic[0],
+    Country: objectData.content.indexedStructured.geoLocation[0].L2.content,
+    // Image: objectData.content.descriptiveNonRepeating.online_media.media[0].thumbnail,
     place: currentPlace
   })
 }
