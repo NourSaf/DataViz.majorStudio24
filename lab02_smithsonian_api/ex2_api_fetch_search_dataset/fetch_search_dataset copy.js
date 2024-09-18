@@ -10,7 +10,7 @@ q=online_visual_material:true
 
 
 // put your API key here;
-const apiKey = "";  
+// const apiKey = "FwhGWdBKEV6OflJzyscnxRaFmpYDkNtipBNx3yVS";  
 
 // search base URL
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
@@ -43,7 +43,7 @@ function fetchSearchData(searchTerm) {
     
     // constructing search queries to get all the rows of data
     // you can change the page size
-    let pageSize = 1000;
+    let pageSize = 5000;
     let numberOfQueries = Math.ceil(data.response.rowCount / pageSize);
     console.log(numberOfQueries)
     for(let i = 0; i < numberOfQueries; i++) {
@@ -64,22 +64,27 @@ function fetchSearchData(searchTerm) {
 }
 
 // fetching all the data listed under our search and pushing them all into our custom array
-function fetchAllData(url) {
+function fetchAllData(url, myArray, callback) {
   window
-  .fetch(url)
-  .then(res => res.json())
-  .then(data => {
-    console.log(data)
+    .fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
 
-    data.response.rows.forEach(function(n) {
-      addObject(n);
+      data.response.rows.forEach(function(n) {
+        addObject(n, myArray);
+      });
+
+      const jsonString = JSON.stringify(myArray);
+      console.log(myArray);
+
+      if (callback) {
+        callback(jsonString);
+      }
+    })
+    .catch(error => {
+      console.log(error);
     });
-    jsonString = JSON.stringify(myArray);
-    console.log(myArray);
-  })
-  .catch(error => {
-    console.log(error)
-  })
 }
 
 // create your own array with just the data you need
