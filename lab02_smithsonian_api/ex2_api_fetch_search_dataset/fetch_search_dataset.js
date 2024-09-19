@@ -10,7 +10,7 @@ q=online_visual_material:true
 
 
 // put your API key here;
-const apiKey = "";  
+const apiKey = "VZ5cjlqrFkjE0ErAhByXgVBkgohNeLBNC1ZaDcSb";  
 
 // search base URL
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";

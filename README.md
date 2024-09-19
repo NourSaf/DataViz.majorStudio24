@@ -3,6 +3,14 @@ This repository is created for Major Studio 01 during the Fall 2024 semester of 
 
 # Concept sketches for the three different data-sets from [Smithsonian Open Access ](https://github.com/Smithsonian/OpenAccess?tab=readme-ov-file#smithsonian-open-access-metadata-repository-github) 
 
+## Mock-Up
+### Entomological Diversity
+(https://www.figma.com/proto/5bKPWekFWG8up127Tgo2M2/240915_Mockup?node-id=37-373&node-type=canvas&t=nqaVa2h3lg77xU8C-1&scaling=scale-down&content-scaling=fixed&page-id=37%3A372&starting-point-node-id=37%3A373)
+
+Mockup requires a password: ****** 
+Please finde it in Canvas
+
+
 ## Concept sketch #01
 ### Portrait of Politics
 ![Sketch01](https://github.com/user-attachments/assets/bf2b07bb-5dac-4c39-bba8-215aabbc3bb0)
@@ -47,3 +55,4 @@ The visualization tool combines a map to pinpoint the geographical origins of th
 
 Data from Entomology Dept. 
 The visualization aims to analyze and visualize the diversity of the collection. It categorizes insects based on taxonomy and their functional roles in ecosystems. Each category has a dedicated view to address two key questions: how are the insects in the collection categorized in terms of their ecological roles, and what are the most represented species or orders of insects in the collection? The visualization tools used include a combination of an interactive map and a circular chart.
+
