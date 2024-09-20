@@ -10,7 +10,6 @@ This repository is created for Major Studio 01 during the Fall 2024 semester of 
 Mockup requires a password: ****** 
 Please finde it in Canvas
 
-
 ## Concept sketch #01
 ### Portrait of Politics
 ![Sketch01](https://github.com/user-attachments/assets/bf2b07bb-5dac-4c39-bba8-215aabbc3bb0)

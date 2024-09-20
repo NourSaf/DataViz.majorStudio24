@@ -35,6 +35,7 @@ let jsonString = '';
 function fetchSearchData(searchTerm) {
   let url = searchBaseURL + "?api_key=" + apiKey + "&q=" + searchTerm;
   console.log(url);
+
   window
   .fetch(url)
   .then(res => res.json())
@@ -43,12 +44,12 @@ function fetchSearchData(searchTerm) {
     
     // constructing search queries to get all the rows of data
     // you can change the page size
-    let pageSize = 1000;
+    let pageSize = 10000;
     let numberOfQueries = Math.ceil(data.response.rowCount / pageSize);
     console.log(numberOfQueries)
     for(let i = 0; i < numberOfQueries; i++) {
       // making sure that our last query calls for the exact number of rows
-      if (i == (numberOfQueries - 1)) {
+      if (i === (numberOfQueries - 1)) {
         searchAllURL = url + `&start=${i * pageSize}&rows=${data.response.rowCount - (i * pageSize)}`;
       } else {
         searchAllURL = url + `&start=${i * pageSize}&rows=${pageSize}`;
@@ -65,6 +66,7 @@ function fetchSearchData(searchTerm) {
 
 // fetching all the data listed under our search and pushing them all into our custom array
 function fetchAllData(url) {
+  console.log("running fetch all data")
   window
   .fetch(url)
   .then(res => res.json())
@@ -74,8 +76,8 @@ function fetchAllData(url) {
     data.response.rows.forEach(function(n) {
       addObject(n);
     });
-    jsonString = JSON.stringify(myArray);
-    console.log(myArray);
+    jsonString = JSON.stringify(myArray, null, 2);
+    console.log("myarray" , myArray);
   })
   .catch(error => {
     console.log(error)
