@@ -10,7 +10,7 @@ d3.json("./data.json").then(data => {
 });
 
 // analyze the data
-
+//local-major-studio-01/data.json
 function analyzeData(){
   let insectFamilyName;
 

@@ -19,7 +19,7 @@ title.style.fontFamily = 'monospace';
 title.style.fontWeight = 'bold';
 title.style.color = 'white';
 title.style.textAlign = 'left';
-title.style.fontSize = '3.7em';
+title.style.fontSize = '3em';
 titleDiv.appendChild(title);
 
 // Create the subtitle div
@@ -31,7 +31,7 @@ link.innerHTML = `Smithsonian Open Access Metadata <br> NMNH - Entomology Dept.`
 link.style.color = 'white';
 link.style.textDecoration = 'none';
 link.style.fontFamily = 'monospace';
-link.style.fontSize = '1.3em';
+link.style.fontSize = '1em';
 link.style.textAlign = 'left';
 subtitleDiv.appendChild(link);
 
@@ -40,7 +40,7 @@ paragraph.innerText = 'This visualization uses data from the Smithsonian Open Ac
 paragraph.style.fontFamily = 'monospace';
 paragraph.style.color = 'white';
 paragraph.style.textAlign = 'left';
-paragraph.style.fontSize = '1.3em';
+paragraph.style.fontSize = '1em';
 subtitleDiv.appendChild(paragraph);
 
 
