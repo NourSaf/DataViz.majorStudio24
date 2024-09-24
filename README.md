@@ -3,6 +3,7 @@ This repository is created for Major Studio 01 during the Fall 2024 semester of 
 
 ## ProtoType 
 https://noursaf.github.io/DataViz.majorStudio24/
+![ProtoType Photo](https://github.com/user-attachments/assets/a857ddea-f5cc-4ba8-aefb-02fcd63eb292)
 
 
 # Concept sketches for the three different data-sets from [Smithsonian Open Access ](https://github.com/Smithsonian/OpenAccess?tab=readme-ov-file#smithsonian-open-access-metadata-repository-github) 
