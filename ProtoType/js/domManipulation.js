@@ -6,7 +6,7 @@ container.style.display = 'flex';
 container.style.flexDirection = 'column';
 container.style.alignItems = 'left';
 container.style.padding = '2em';
-container.style.width = '20vw';
+container.style.width = '30vw';
 container.style.position = 'absolute';
 
 
@@ -28,23 +28,25 @@ const link = document.createElement('a');
 link.href = 'https://github.com/Smithsonian/OpenAccess';
 link.target = '_blank'; // Open link in a new tab
 link.innerText = `Smithsonian Open Access Metadata NMNH - Entomology Dept.`;
-link.style.color = 'black';
-link.style.backgroundColor = 'orange';
+link.style.color = 'white';
+link.style.backgroundColor = 'black';
+link.style.opacity = '0.4';
 link.style.padding = '0.8em';
 link.style.textDecoration = 'none';
 link.style.fontFamily = 'monospace';
-link.style.fontSize = '1em';
+link.style.fontSize = '0.7em';
 link.style.textAlign = 'left';
 subtitleDiv.appendChild(link);
 
 const paragraph = document.createElement('p');
 paragraph.innerText = 'This visualization uses data from the Smithsonian Open Access Metadata API to display the taxonomy of the insects in the collection.';
 paragraph.style.fontFamily = 'monospace';
-paragraph.style.color = 'black';
-paragraph.style.backgroundColor = 'orange';
+paragraph.style.color = 'white';
+paragraph.style.backgroundColor = 'black';
+paragraph.style.opacity = '0.4';
 paragraph.style.padding = "0.8em";
 paragraph.style.textAlign = 'left';
-paragraph.style.fontSize = '1em';
+paragraph.style.fontSize = '0.7em';
 subtitleDiv.appendChild(paragraph);
 
 
