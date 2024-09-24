@@ -52,9 +52,7 @@ subtitleDiv.appendChild(paragraph);
 
 
 // Append the title and subtitle divs to the main container
-container.appendChild(titleDiv);
-container.appendChild(subtitleDiv);
-textDiv.appendChild(container);
+
 
 // create a hint for useres to drag and move 
 const hintBox = document.createElement('div');
@@ -71,6 +69,10 @@ hintButton.style.outline = '0.2px dashed white';
 hintButton.style.backgroundColor = 'black';
 hintButton.style.border = 'none';
 
-hintBox.appendChild(hintButton);
+
+container.appendChild(titleDiv);
+container.appendChild(subtitleDiv);
+textDiv.appendChild(container);
 container.appendChild(hintBox);
+hintBox.appendChild(hintButton);
 
