@@ -30,8 +30,7 @@ link.target = '_blank'; // Open link in a new tab
 link.innerText = `Smithsonian Open Access Metadata NMNH - Entomology Dept.`;
 link.style.color = 'black';
 link.style.backgroundColor = 'orange';
-link.style.margin = "0.8em";
-
+link.style.padding = '0.8em';
 link.style.textDecoration = 'none';
 link.style.fontFamily = 'monospace';
 link.style.fontSize = '1em';
