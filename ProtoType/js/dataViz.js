@@ -4,7 +4,7 @@ let myData;
 let taxFamily = [];
 
 // load the data
-d3.json('/ProtoType/Data/SmalScaleData.json').then(data => { 
+d3.json('./ProtoType/Data/SmalScaleData.json').then(data => { 
   myData = data;
   analyzeData();
 //   displayData();
