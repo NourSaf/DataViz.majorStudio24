@@ -9,7 +9,7 @@ const search =  `unit_code:"NMNHENTO" AND online_visual_material:true`;
 let myArray = [];
 
 // string that will hold the stringified JSON data
-let jsonString = '';
+export let jsonString = '';
 
 // search: fetches an array of terms based on term category
 function fetchSearchData(searchTerm) {
@@ -27,10 +27,11 @@ function fetchSearchData(searchTerm) {
     let pageSize = 1000;
     let numberOfQueries = Math.ceil(data.response.rowCount / pageSize);
     console.log(numberOfQueries)
+    let searchAllURL;
     for(let i = 0; i < numberOfQueries; i++) {
       // making sure that our last query calls for the exact number of rows
       if (i === (numberOfQueries - 1)) {
-        searchAllURL = url + `&start=${i * pageSize}&rows=${data.response.rowCount - (i * pageSize)}`;
+       searchAllURL = url + `&start=${i * pageSize}&rows=${data.response.rowCount - (i * pageSize)}`;
       } else {
         searchAllURL = url + `&start=${i * pageSize}&rows=${pageSize}`;
       }
@@ -56,6 +57,7 @@ function fetchAllData(url) {
     data.response.rows.forEach(function(n) {
       addObject(n);
     });
+    
     jsonString = JSON.stringify(myArray, null, 2);
     console.log("myarray" , myArray);
   })
