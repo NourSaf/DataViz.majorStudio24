@@ -2,7 +2,7 @@
 This repository is created for Major Studio 01 during the Fall 2024 semester of the MSc. Data Visualization program at Parsons, The New School, New York City. It showcases the development of code and exercises throughout the work in the studio.
 
 ## ProtoType 
-(https://noursaf.github.io/DataViz.majorStudio24/)
+https://noursaf.github.io/DataViz.majorStudio24/
 
 
 # Concept sketches for the three different data-sets from [Smithsonian Open Access ](https://github.com/Smithsonian/OpenAccess?tab=readme-ov-file#smithsonian-open-access-metadata-repository-github) 
