@@ -85,8 +85,8 @@ function analyzeData(){
         valueField: "value",
         categoryField: "name",
         childDataField: "children",
-        minRadius: 30,
-        maxRadius: am5.percent(20),
+        minRadius: 27,
+        maxRadius: am5.percent(17),
         manyBodyStrength: -3,
         centerStrength: 0.9,
         nodePadding: 20

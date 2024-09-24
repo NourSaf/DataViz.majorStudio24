@@ -57,22 +57,4 @@ textDiv.appendChild(container);
 
 // Responsive styling
 const style = document.createElement('style');
-style.innerHTML = `
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 1.5em;
-    }
-    h2 {
-      font-size: 1em;
-    }
-  }
-  @media (min-width: 601px) {
-    h1 {
-      font-size: 2.5em;
-    }
-    h2 {
-      font-size: 1.5em;
-    }
-  }
-`;
-document.head.appendChild(style);
+
