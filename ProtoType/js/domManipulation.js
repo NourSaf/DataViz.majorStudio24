@@ -1,6 +1,7 @@
 // Create the main container div
 
 const textDiv = document.getElementById('textDiv');
+
 const container = document.createElement('div');
 container.style.display = 'flex';
 container.style.flexDirection = 'column';
@@ -55,6 +56,21 @@ container.appendChild(titleDiv);
 container.appendChild(subtitleDiv);
 textDiv.appendChild(container);
 
-// Responsive styling
-const style = document.createElement('style');
+// create a hint for useres to drag and move 
+const hintBox = document.createElement('div');
+const hintButton = document.createElement('button');
+hintButton.innerText = 'Click and Drag the visualizations';
+hintButton.style.position = 'absolute';
+hintButton.style.bottom = '-80vh';
+hintButton.style.left = '5%';
+hintButton.style.padding = '0.5em 1em';
+hintButton.style.fontFamily = 'monospace';
+hintButton.style.fontSize = '1em';
+hintButton.style.color = 'white';
+hintButton.style.outline = '0.2px dashed white';
+hintButton.style.backgroundColor = 'black';
+hintButton.style.border = 'none';
+
+hintBox.appendChild(hintButton);
+container.appendChild(hintBox);
 
