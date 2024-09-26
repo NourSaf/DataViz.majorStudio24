@@ -4,7 +4,7 @@ let myData;
 let taxFamily = [];
 
 // load the data
-d3.json('data/data.json').then(data => { 
+d3.json('/data.json').then(data => { 
   myData = data;
   analyzeData();
 });
