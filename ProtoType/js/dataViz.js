@@ -37,7 +37,6 @@ function analyzeData(){
   });
   console.log(taxFamily)
 
-
   function createNodes(taxFamily) {
     let nodes = [];
     
