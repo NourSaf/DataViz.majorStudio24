@@ -48,6 +48,9 @@ d3.json('/data.json').then(data => {
           .attr("viewBox", `-${radius} -${radius} ${width} ${width}`)
           .style("font", "12px  monospace");
 
+          container.append("h3")
+          .style("font-family", "monospace")
+          .text(family.name);
       // Info text placeholder
       const infoText = container.append("div")
           .attr("class", "info-text")
@@ -69,9 +72,7 @@ d3.json('/data.json').then(data => {
           .text(d => `${d.ancestors().map(d => d.data.name).reverse().slice(1).join("/")}\n${d.value}`);
 
       // Add family title
-      container.append("h3")
-          .style("font-family", "monospace")
-          .text(family.name);
+  
   });
 });
 
