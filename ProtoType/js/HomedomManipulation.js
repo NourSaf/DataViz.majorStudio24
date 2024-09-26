@@ -17,11 +17,7 @@ container.style.position = 'absolute';
 const titleDiv = document.createElement('div');
 const title = document.createElement('h1');
 title.innerText = 'Taxonomy Visualization';
-title.style.fontFamily = 'monospace';
-title.style.fontWeight = 'bold';
-title.style.color = 'white';
-title.style.textAlign = 'left';
-title.style.fontSize = '3em';
+title.classList = "titleDiv";
 titleDiv.appendChild(title);
 
 // Create the subtitle div
