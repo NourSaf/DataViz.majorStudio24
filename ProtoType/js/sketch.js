@@ -1,4 +1,4 @@
-d3.json('/data.json').then(data => {
+d3.json('./data.json').then(data => {
   // Group by family and country
   const familyData = d3.groups(data, d => d.family)
       .map(([family, items]) => ({

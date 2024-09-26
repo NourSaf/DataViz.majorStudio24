@@ -18,15 +18,6 @@ let accChangeX = 0;
 let accChangeY = 0;
 let accChangeT = 0;
 
-// function setup() {
-//   // Create a canvas that fills the entire viewport display
-//   createCanvas(windowWidth, windowHeight);
-
-//   // Create 70 instances of the Ball class
-//   for (let i = 0; i < 110; i++) {
-//     balls.push(new Ball());
-//   }
-// }
 
 function draw() {
   background(0);
