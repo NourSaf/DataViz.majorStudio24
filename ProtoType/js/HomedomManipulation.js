@@ -1,4 +1,5 @@
 // Create the main container div
+//homepage
 
 const textDiv = document.getElementById('textDiv');
 
@@ -55,24 +56,23 @@ subtitleDiv.appendChild(paragraph);
 
 
 // create a hint for useres to drag and move 
-const hintBox = document.createElement('div');
-const hintButton = document.createElement('button');
-hintButton.innerText = 'Click and Drag the visualizations';
-hintButton.style.position = 'absolute';
-hintButton.style.bottom = '-80vh';
-hintButton.style.left = '5%';
-hintButton.style.padding = '0.5em 1em';
-hintButton.style.fontFamily = 'monospace';
-hintButton.style.fontSize = '1em';
-hintButton.style.color = 'white';
-hintButton.style.outline = '0.2px dashed white';
-hintButton.style.backgroundColor = 'black';
-hintButton.style.border = 'none';
+// const hintBox = document.createElement('div');
+// const hintButton = document.createElement('button');
+// hintButton.innerText = 'Click and Drag the visualizations';
+// hintButton.style.position = 'absolute';
+// hintButton.style.bottom = '-80vh';
+// hintButton.style.left = '5%';
+// hintButton.style.padding = '0.5em 1em';
+// hintButton.style.fontFamily = 'monospace';
+// hintButton.style.fontSize = '1em';
+// hintButton.style.color = 'white';
+// hintButton.style.outline = '0.2px dashed white';
+// hintButton.style.backgroundColor = 'black';
+// hintButton.style.border = 'none';
 
 
 container.appendChild(titleDiv);
 container.appendChild(subtitleDiv);
 textDiv.appendChild(container);
-container.appendChild(hintBox);
-hintBox.appendChild(hintButton);
-
+// container.appendChild(hintBox);
+// hintBox.appendChild(hintButton);

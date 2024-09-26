@@ -1,5 +1,15 @@
 // the balls go out of the screen after a while and disappear. 
 //Must fix this.
+function setup() {
+  // Create a canvas that fills the entire viewport display and append it to the element with id "ball-container"
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent('ball-container');
+
+  // Create 70 instances of the Ball class
+  for (let i = 0; i < 110; i++) {
+    balls.push(new Ball());
+  }
+}
 
 let balls = [];
 let threshold = 30;
@@ -8,15 +18,15 @@ let accChangeX = 0;
 let accChangeY = 0;
 let accChangeT = 0;
 
-function setup() {
-  // Create a canvas that fills the entire viewport display
-  createCanvas(windowWidth, windowHeight);
+// function setup() {
+//   // Create a canvas that fills the entire viewport display
+//   createCanvas(windowWidth, windowHeight);
 
-  // Create 70 instances of the Ball class
-  for (let i = 0; i < 110; i++) {
-    balls.push(new Ball());
-  }
-}
+//   // Create 70 instances of the Ball class
+//   for (let i = 0; i < 110; i++) {
+//     balls.push(new Ball());
+//   }
+// }
 
 function draw() {
   background(0);

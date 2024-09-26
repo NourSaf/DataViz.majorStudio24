@@ -1,0 +1,450 @@
+[
+    {
+        "name": "Aeshnidae",
+        "number": 641
+    },
+    {
+        "name": "Platycnemididae",
+        "number": 207
+    },
+    {
+        "name": "Calopterygidae",
+        "number": 1095
+    },
+    {
+        "name": "Coenagrionidae",
+        "number": 6612
+    },
+    {
+        "name": "Lestidae",
+        "number": 855
+    },
+    {
+        "name": "Libellulidae",
+        "number": 7138
+    },
+    {
+        "name": "Undetermined",
+        "number": 484
+    },
+    {
+        "name": "Cordulegastridae",
+        "number": 88
+    },
+    {
+        "name": "Corduliidae",
+        "number": 554
+    },
+    {
+        "name": "Not Specified",
+        "number": 182
+    },
+    {
+        "name": "Gomphidae",
+        "number": 713
+    },
+    {
+        "name": "Sphecidae",
+        "number": 196
+    },
+    {
+        "name": "Tenthredinidae",
+        "number": 42
+    },
+    {
+        "name": "Macromiidae",
+        "number": 66
+    },
+    {
+        "name": "Tiphiidae",
+        "number": 43
+    },
+    {
+        "name": "Chlorocyphidae",
+        "number": 160
+    },
+    {
+        "name": "Megapodagrionidae",
+        "number": 238
+    },
+    {
+        "name": "Protoneuridae",
+        "number": 240
+    },
+    {
+        "name": "Figitidae",
+        "number": 16
+    },
+    {
+        "name": "Braconidae",
+        "number": 199
+    },
+    {
+        "name": "Ichneumonidae",
+        "number": 241
+    },
+    {
+        "name": "Culicidae",
+        "number": 149
+    },
+    {
+        "name": "Miridae",
+        "number": 40
+    },
+    {
+        "name": "Eulophidae",
+        "number": 48
+    },
+    {
+        "name": "Pseudostigmatidae",
+        "number": 45
+    },
+    {
+        "name": "Pteromalidae",
+        "number": 41
+    },
+    {
+        "name": "Apidae",
+        "number": 26
+    },
+    {
+        "name": "Euphaeidae",
+        "number": 58
+    },
+    {
+        "name": "Pyralidae",
+        "number": 43
+    },
+    {
+        "name": "Carabidae",
+        "number": 42
+    },
+    {
+        "name": "Platystictidae",
+        "number": 187
+    },
+    {
+        "name": "Synthemistidae",
+        "number": 8
+    },
+    {
+        "name": "Coreidae",
+        "number": 9
+    },
+    {
+        "name": "Papilionidae",
+        "number": 27
+    },
+    {
+        "name": "Eriaporidae",
+        "number": 1
+    },
+    {
+        "name": "Diphlebiidae",
+        "number": 18
+    },
+    {
+        "name": "Formicidae",
+        "number": 15
+    },
+    {
+        "name": "Scarabaeidae",
+        "number": 21
+    },
+    {
+        "name": "Cerambycidae",
+        "number": 143
+    },
+    {
+        "name": "Curculionidae",
+        "number": 36
+    },
+    {
+        "name": "Encyrtidae",
+        "number": 31
+    },
+    {
+        "name": "Bethylidae",
+        "number": 58
+    },
+    {
+        "name": "Chalcididae",
+        "number": 23
+    },
+    {
+        "name": "Torymidae",
+        "number": 21
+    },
+    {
+        "name": "Reduviidae",
+        "number": 43
+    },
+    {
+        "name": "Aradidae",
+        "number": 3
+    },
+    {
+        "name": "Pterophoridae",
+        "number": 12
+    },
+    {
+        "name": "Bradynobaenidae",
+        "number": 2
+    },
+    {
+        "name": "Cydnidae",
+        "number": 6
+    },
+    {
+        "name": "Unidentified",
+        "number": 113
+    },
+    {
+        "name": "Eucharitidae",
+        "number": 8
+    },
+    {
+        "name": "Epiophlebiidae",
+        "number": 2
+    },
+    {
+        "name": "Polythoridae",
+        "number": 28
+    },
+    {
+        "name": "Crambidae",
+        "number": 7
+    },
+    {
+        "name": "Petaluridae",
+        "number": 24
+    },
+    {
+        "name": "Eupelmidae",
+        "number": 15
+    },
+    {
+        "name": "Mutillidae",
+        "number": 34
+    },
+    {
+        "name": "Brentidae",
+        "number": 8
+    },
+    {
+        "name": "Thyrididae",
+        "number": 3
+    },
+    {
+        "name": "Eumenidae",
+        "number": 1
+    },
+    {
+        "name": "Sapygidae",
+        "number": 4
+    },
+    {
+        "name": "Chrysididae",
+        "number": 18
+    },
+    {
+        "name": "Pyrrhocoridae",
+        "number": 5
+    },
+    {
+        "name": "Synlestidae",
+        "number": 21
+    },
+    {
+        "name": "Eurytomidae",
+        "number": 34
+    },
+    {
+        "name": "Attelabidae",
+        "number": 2
+    },
+    {
+        "name": "Agaonidae",
+        "number": 4
+    },
+    {
+        "name": "Cynipidae",
+        "number": 6
+    },
+    {
+        "name": "Isostictidae",
+        "number": 6
+    },
+    {
+        "name": "Alydidae",
+        "number": 16
+    },
+    {
+        "name": "Rhyparochromidae",
+        "number": 2
+    },
+    {
+        "name": "Hemiphlebiidae",
+        "number": 1
+    },
+    {
+        "name": "Nabidae",
+        "number": 4
+    },
+    {
+        "name": "Largidae",
+        "number": 4
+    },
+    {
+        "name": "Perilampidae",
+        "number": 6
+    },
+    {
+        "name": "Vanhorniidae",
+        "number": 2
+    },
+    {
+        "name": "Austropetaliidae",
+        "number": 6
+    },
+    {
+        "name": "Pompilidae",
+        "number": 18
+    },
+    {
+        "name": "Diapriidae",
+        "number": 6
+    },
+    {
+        "name": "Charipidae",
+        "number": 1
+    },
+    {
+        "name": "Tessaratomidae",
+        "number": 3
+    },
+    {
+        "name": "Castniidae",
+        "number": 6
+    },
+    {
+        "name": "Cossidae",
+        "number": 1
+    },
+    {
+        "name": "Histeridae",
+        "number": 1
+    },
+    {
+        "name": "Platygastridae",
+        "number": 2
+    },
+    {
+        "name": "Proctotrupidae",
+        "number": 1
+    },
+    {
+        "name": "Thaumatoneuridae",
+        "number": 2
+    },
+    {
+        "name": "Pentatomidae",
+        "number": 10
+    },
+    {
+        "name": "Dryinidae",
+        "number": 6
+    },
+    {
+        "name": "Mymaridae",
+        "number": 4
+    },
+    {
+        "name": "Scoliidae",
+        "number": 2
+    },
+    {
+        "name": "Perilestidae",
+        "number": 4
+    },
+    {
+        "name": "Tineidae",
+        "number": 2
+    },
+    {
+        "name": "Amphipterygidae",
+        "number": 4
+    },
+    {
+        "name": "Cleridae",
+        "number": 5
+    },
+    {
+        "name": "Ormyridae",
+        "number": 2
+    },
+    {
+        "name": "Vespidae",
+        "number": 2
+    },
+    {
+        "name": "Tingidae",
+        "number": 2
+    },
+    {
+        "name": "Scelionidae",
+        "number": 3
+    },
+    {
+        "name": "Tortricidae",
+        "number": 1
+    },
+    {
+        "name": "Unknown hymenoptera",
+        "number": 3
+    },
+    {
+        "name": "Dicteriadidae",
+        "number": 2
+    },
+    {
+        "name": "Pergidae",
+        "number": 2
+    },
+    {
+        "name": "Chalcidoidea",
+        "number": 1
+    },
+    {
+        "name": "Vesperidae",
+        "number": 1
+    },
+    {
+        "name": "Stephanidae",
+        "number": 1
+    },
+    {
+        "name": "Acanthosomatidae",
+        "number": 2
+    },
+    {
+        "name": "Scutelleridae",
+        "number": 1
+    },
+    {
+        "name": "Unknown lepidoptera",
+        "number": 1
+    },
+    {
+        "name": "Lygaeidae",
+        "number": 1
+    },
+    {
+        "name": "Halictidae",
+        "number": 1
+    },
+    {
+        "name": "Elachistidae",
+        "number": 1
+    }
+]

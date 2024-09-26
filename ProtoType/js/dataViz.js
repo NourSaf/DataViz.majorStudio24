@@ -4,7 +4,7 @@ let myData;
 let taxFamily = [];
 
 // load the data
-d3.json("./data.json").then(data => { 
+d3.json("../ProtoType/data/data.json").then(data => { 
   myData = data;
   analyzeData();
 });
@@ -36,6 +36,7 @@ function analyzeData(){
       }
   });
   console.log(taxFamily)
+
 
   function createNodes(taxFamily) {
     let nodes = [];
