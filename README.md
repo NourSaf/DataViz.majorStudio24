@@ -1,10 +1,7 @@
 # DATAVIZ – MAJOR STUDIO 01  
 This repository is created for Major Studio 01 during the Fall 2024 semester of the MSc. Data Visualization program at Parsons, The New School, New York City. It showcases the development of code and exercises throughout the work in the studio.
 
-## ProtoType 
-### Quantitative Visualization
-https://noursaf.github.io/DataViz.majorStudio24/
-![ProtoType Photo](https://github.com/user-attachments/assets/a857ddea-f5cc-4ba8-aefb-02fcd63eb292)
+
 
 # Qualitative  
 ## Concept sketch #01
@@ -31,7 +28,10 @@ Questions: What do titles of plitical books at the Smithsonian Collection tells 
 
 # Quantitative 
 # Concept sketches for the three different data-sets from [Smithsonian Open Access ](https://github.com/Smithsonian/OpenAccess?tab=readme-ov-file#smithsonian-open-access-metadata-repository-github) 
-
+## ProtoType 
+### Quantitative Visualization
+https://noursaf.github.io/DataViz.majorStudio24/
+![ProtoType Photo](https://github.com/user-attachments/assets/a857ddea-f5cc-4ba8-aefb-02fcd63eb292)
 
 ## Mock-Up
 ### Entomological Diversity
