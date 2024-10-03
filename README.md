@@ -2,10 +2,34 @@
 This repository is created for Major Studio 01 during the Fall 2024 semester of the MSc. Data Visualization program at Parsons, The New School, New York City. It showcases the development of code and exercises throughout the work in the studio.
 
 ## ProtoType 
+### Quantitative Visualization
 https://noursaf.github.io/DataViz.majorStudio24/
 ![ProtoType Photo](https://github.com/user-attachments/assets/a857ddea-f5cc-4ba8-aefb-02fcd63eb292)
 
+# Qualitative  
+## Concept sketch #01
+### A Qualitiative Exploration in Political History 
+Keywords: Revolution / Movement
+Datapoints: 6310 / 41508
+![Sketch01](https://github.com/user-attachments/assets/abd56ae9-553a-41db-ae6f-64744067532b)
 
+## Concept sketch #02
+### The Heat of Movements
+Data points: 41508
+Question 01: How have political movements evolved over time, and which movements have experienced the most significant increase or decline in representation across published books?
+Question 02: Does the movements changed or the focuse of the smithsonian has changed? 
+![sketch02](https://github.com/user-attachments/assets/aa7a62f7-3f11-4381-8cc6-725199ab8ae3)
+
+
+## Concept sketch #03
+### Decoded Titles 
+Search key: type: books 
+Data points: 6458
+Questions: What do titles of plitical books at the Smithsonian Collection tells us? 
+![sketch3](https://github.com/user-attachments/assets/e509d26e-e5bd-4efe-b79c-d0106a4be765)
+
+
+# Quantitative 
 # Concept sketches for the three different data-sets from [Smithsonian Open Access ](https://github.com/Smithsonian/OpenAccess?tab=readme-ov-file#smithsonian-open-access-metadata-repository-github) 
 
 
