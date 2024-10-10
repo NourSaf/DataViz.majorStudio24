@@ -3,7 +3,7 @@ import {apiKey} from './ApiKey.js';
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 
 /* to check results  ––––––––>  https://collections.si.edu/search/  */
-const search =  `unit_code:"NMNHENTO" AND online_visual_material:true`;
+const search =  `object_type:Books and language:English+language`;
 
 // array that we will write into
 let myArray = [];
@@ -70,21 +70,13 @@ function fetchAllData(url) {
 function addObject(objectData) {  
   
 //undefined check for coutnry 
-let itemCountry = objectData.content.indexedStructured.geoLocation ? objectData.content.indexedStructured.geoLocation[0].L2.content : "not specified";
 let itemName = objectData.title || "Not Specified";
-let taxClass = objectData.content.indexedStructured.tax_class ? objectData.content.indexedStructured.tax_class[0] : "Not Specified";
-let taxFamily = objectData.content.indexedStructured.tax_family ? objectData.content.indexedStructured.tax_family[0] : "Not Specified";
-let taxKingdom = objectData.content.indexedStructured.tax_kingdom ? objectData.content.indexedStructured.tax_kingdom[0] : "Not Specified";
-let topic = objectData.content.indexedStructured.topic ? objectData.content.indexedStructured.topic[0] : "Not Specified";
+let objectType = objectData.content.freetext.objectType[0].content 
   
 myArray.push({
     A_id: objectData.id,
     name: itemName,
-    class: taxClass,
-    family: taxFamily,
-    tax_kingdom: taxKingdom,
-    Topic: topic,
-    Country: itemCountry,
+    objectType: objectType,
   })
 }
 
