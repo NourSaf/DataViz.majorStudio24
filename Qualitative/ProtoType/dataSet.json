@@ -1,0 +1,162 @@
+{
+      "historical_context": {
+        "time_periods": [
+          "medieval", "renaissance", "colonial", "industrial revolution", "enlightenment", "modern", "early american", 
+          "ancient", "victorian", "georgian", "middle ages", "classical", "age of reason", "imperial age", "byzantine", 
+          "dark ages", "feudal", "early modern", "pre-colonial"
+        ],
+        "events": [
+          "civil war", "revolution", "independence", "world war", "exploration", "discovery", "treaty", "invasion", 
+          "conquest", "crusades", "expansion", "plague", "rebellion", "uprising", "renaissance", "colonization", "industrialization", 
+          "migration", "diaspora", "abolition", "enfranchisement"
+        ]
+      },
+      "political_themes": {
+        "government_systems": [
+          "monarchy", "republic", "democracy", "socialism", "communism", "dictatorship", "fascism", "anarchy", "oligarchy", 
+          "parliament", "totalitarianism", "federalism", "theocracy", "autocracy", "liberalism", "conservatism", "feudalism", 
+          "authoritarianism", "tyranny", "plutocracy"
+        ],
+        "revolutionary_language": [
+          "liberty", "freedom", "justice", "equality", "rebellion", "revolt", "resistance", "reform", "change", "rights", 
+          "revolution", "independence", "self-determination", "emancipation", "insurrection", "defiance", "overthrow", "abolition", 
+          "protest", "civil disobedience", "struggle"
+        ],
+        "rhetoric_of_power": [
+          "leader", "ruler", "dictator", "emperor", "king", "laws", "policy", "imperial", "authority", "tyranny", 
+          "command", "sovereignty", "government", "control", "dominion", "oppression", "governance", "rule", "regime", 
+          "bureaucracy", "empowerment", "subjugation"
+        ]
+      },
+      "social_and_cultural_ideologies": {
+        "class_and_hierarchy": [
+          "peasants", "aristocracy", "working class", "bourgeoisie", "lords", "proletariat", "servants", "elite", "slaves", 
+          "serfdom", "capitalist", "landowner", "tenant", "guild", "nobility", "gentry", "baron", "duke", "vassal", 
+          "feudal lord", "estate", "indentured servant", "bourgeois", "plebeian"
+        ],
+        "race_and_ethnicity": [
+          "african", "asian", "european", "native american", "hispanic", "racism", "civilization", "savage", "barbarism", 
+          "ethnic", "tribal", "multicultural", "segregation", "race", "colonial", "indigenous", "cultural superiority", 
+          "racial purity", "ethnicity", "diaspora", "creole", "mestizo", "racialized", "inferiority", "nationalism", "exclusion"
+        ],
+        "gender": [
+          "women", "men", "masculinity", "femininity", "patriarchy", "motherhood", "fatherhood", "equality", "feminism", 
+          "matriarchy", "gender roles", "gender identity", "suffrage", "oppression", "womanhood", "manhood", "toxic masculinity", 
+          "misogyny", "male dominance", "subordination", "sexuality", "gender norms", "gender binary"
+        ]
+      },
+      "religious_and_philosophical_themes": {
+        "religions": [
+          "christianity", "islam", "judaism", "buddhism", "hinduism", "paganism", "atheism", "deism", "god", "church", 
+          "priest", "monk", "prophet", "holy", "sacred", "temple", "missionary", "ritual", "ceremony", "pilgrimage", 
+          "faith", "belief", "heresy", "doctrine", "orthodoxy", "salvation", "hell", "devotion", "martyrdom"
+        ],
+        "moral_philosophy": [
+          "virtue", "vice", "sin", "ethics", "morality", "justice", "good", "evil", "soul", "heaven", "hell", "redemption", 
+          "atonement", "guilt", "responsibility", "truth", "duty", "conscience", "forgiveness", "compassion", "temptation", 
+          "sacrifice", "destiny", "karma", "righteousness", "piety"
+        ],
+        "enlightenment": [
+          "reason", "science", "progress", "knowledge", "logic", "skepticism", "rationalism", "empiricism", "humanism", 
+          "individualism", "liberalism", "tolerance", "secularism", "natural law", "freedom of thought", "intellectualism", 
+          "enlightenment", "philosophy", "objective truth", "universal rights"
+        ]
+      },
+      "colonialism_and_imperialism": {
+        "language_of_conquest": [
+          "empire", "colonization", "conquest", "mission", "expansion", "dominion", "colonialism", "imperialism", 
+          "settler", "occupation", "exploit", "dominate", "subjugate", "annexation", "civilizing mission", "colonizer", 
+          "missionary", "exploitation", "hegemony", "protectorate"
+        ],
+        "geopolitical_focus": [
+          "africa", "india", "asia", "latin america", "caribbean", "british empire", "spanish empire", "french empire", 
+          "portuguese empire", "dutch empire", "ottoman empire", "balkan", "indochina", "middle east", "west indies", 
+          "pacific islands", "north america", "south america", "east indies", "north africa", "southern africa", "levant"
+        ]
+      },
+      "technological_and_scientific_themes": {
+        "industrial_revolution": [
+          "machine", "industry", "technology", "factory", "progress", "mechanization", "steam", "innovation", "automation", 
+          "railroad", "assembly line", "mass production", "electricity", "engine", "telegraph", "industrialization", 
+          "infrastructure", "urbanization", "automation", "textile", "mining", "engineering"
+        ],
+        "exploration_and_discovery": [
+          "exploration", "discovery", "adventure", "journey", "unknown", "expedition", "voyage", "cartography", "scientific", 
+          "navigation", "explorers", "settlement", "territory", "frontier", "colonization", "mapping", "surveying", 
+          "natural history", "geography", "archaeology"
+        ]
+      },
+      "biographical_focus": {
+        "famous_figures": [
+          "napoleon", "george washington", "alexander the great", "queen victoria", "abraham lincoln", "julius caesar", 
+          "genghis khan", "cleopatra", "shakespeare", "charlemagne", "gandhi", "churchill", "einstein", "marie curie", 
+          "columbus", "newton", "darwin", "freud", "lenin", "stalin", "martin luther king", "franklin", "monroe", "nixon"
+        ],
+        "legacy": [
+          "hero", "villain", "leader", "visionary", "pioneer", "reformer", "tyrant", "martyr", "saint", "icon", "champion", 
+          "oppressor", "revolutionary", "patriot", "freedom fighter", "legend", "founder", "innovator", "maverick", 
+          "prophet", "traitor", "radical", "celebrity", "victim", "sage"
+        ]
+      },
+      "economic_and_capitalist_themes": {
+        "capitalism_and_commerce": [
+          "capitalism", "trade", "commerce", "markets", "wealth", "industry", "labor", "business", "free market", 
+          "enterprise", "merchant", "economy", "globalization", "corporation", "investment", "monopoly", "competition", 
+          "currency", "stocks", "venture", "profit", "supply", "demand", "market forces", "inflation", "commodities"
+        ],
+        "labor_and_industry": [
+          "labor", "workers", "factory", "manufacturing", "capital", "exploitation", "union", "labor rights", "strike", 
+          "wage", "workforce", "production", "assembly", "sweatshop", "industrialization", "working class", "labor force", 
+          "economic exploitation", "employment", "guild", "apprenticeship", "job", "craft", "labor strike"
+        ]
+      },
+      "electronic_resources_and_digital_terminology": {
+        "digital_age": [
+          "digital", "online", "technology", "electronic", "web", "cyber", "internet", "access", "software", "network", 
+          "data", "virtual", "program", "algorithm", "automation", "artificial intelligence", "cloud", "platform", 
+          "social media", "connectivity", "databases", "information age", "e-commerce", "digitization"
+        ],
+        "knowledge_dissemination": [
+          "archive", "data", "search", "database", "repository", "virtual", "catalog", "library", "metadata", 
+          "information", "publication", "journal", "electronic", "open access", "digital library", "metadata", 
+          "indexing", "online resources", "reference", "e-book", "text mining", "digitization", "database management"
+        ]
+      },
+      "racial_and_colonial_ideologies": {
+        "racism_or_colonial_language": [
+          "race", "racial", "segregation", "apartheid", "discrimination", "civilizing mission", "exploitation", "oppression", 
+          "superiority", "subjugation", "colonialism", "racial purity", "ethnocentrism", "imperialism", "white supremacy", 
+          "eugenics", "racial inequality", "assimilation", "slavery", "genocide", "racist", "xenophobia", "racial profiling", 
+          "institutional racism"
+        ],
+        "exoticism_and_othering": [
+          "exotic", "savage", "primitive", "tribal", "barbaric", "uncivilized", "alien", "foreign", "oriental", 
+          "ethnic", "inferior", "superior", "noble savage", "colonial", "outsider", "non-western", "mysterious", 
+          "heathen", "pagan", "orientalism", "cultural appropriation", "otherness", "diaspora", "indigenous", "ethnographic"
+        ]
+      },
+      "literary_and_aesthetic_themes": {
+        "genre_and_style": [
+          "romance", "tragedy", "epic", "novel", "drama", "poetry", "adventure", "sci-fi", "mystery", "gothic", "satire", 
+          "historical fiction", "realism", "fantasy", "myth", "fable", "allegory", "melodrama", "comedy", "romanticism", 
+          "naturalism", "modernism", "postmodernism", "symbolism", "surrealism", "stream of consciousness"
+        ],
+        "symbolic_language": [
+          "light", "dark", "shadow", "dream", "vision", "destiny", "fate", "eternity", "infinity", "soul", "heaven", 
+          "earth", "fire", "water", "air", "death", "rebirth", "transcendence", "truth", "illusion", "mirror", 
+          "labyrinth", "journey", "path", "crossroads", "circle", "dreamscape"
+        ]
+      },
+      "education_and_knowledge": {
+        "pedagogical_focus": [
+          "education", "learning", "treatise", "instruction", "guide", "manual", "scholar", "teacher", "student", 
+          "curriculum", "textbook", "educational reform", "training", "academic", "lecture", "pedagogy", "apprenticeship", 
+          "mentor", "teaching", "instructional"
+        ],
+        "scientific_or_scholarly_terminology": [
+          "introduction", "study of", "theory", "thesis", "research", "analysis", "survey", "critical", "evaluation", 
+          "dissertation", "review", "methodology", "experiment", "observation", "fieldwork", "investigation", 
+          "hypothesis", "theorize", "discourse", "scholarship", "literature review", "peer review", "conceptual framework"
+        ]
+      }
+    }
