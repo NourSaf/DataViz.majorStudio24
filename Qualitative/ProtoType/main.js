@@ -42,6 +42,7 @@ let gender = [
   "misogyny", "male dominance", "subordination", "sexuality", "gender norms", "gender binary"
 ]
 
+
 async function fetchData(url) {
   try {
     const response = await fetch(url);
@@ -49,8 +50,7 @@ async function fetchData(url) {
       throw new Error(`Network response was not ok (status ${response.status})`);
     }
     const data = await response.json(myJson);   
-
-    return data.slice(0, 1003);
+    return data.slice(0, 1002);
   } catch (error) {
     console.error('Error fetching data:', error);
     throw error; 
@@ -58,7 +58,7 @@ async function fetchData(url) {
 }
 
 function showLoading() {
-  const app = d3.select('#app');
+  const app = d3.select('#appContainer');
   app.append('div')
     .attr('class', 'loading')
     .text('...LOADING...');
@@ -81,7 +81,7 @@ const dataPromise = fetchData(myJson)
     console.log("type:",  type);
 
     // Create a new div and display the names
-    const app = d3.select('#app');
+    const app = d3.select('#appContainer');
     const mainContainer = app.append('div').attr('class', 'main-container');
 
   
@@ -100,7 +100,7 @@ const dataPromise = fetchData(myJson)
       console.log('this is my tokens', tokens);
       let lowerCaseType = type[index].toLowerCase();
       div.textContent = `${lowerCaseName} (${lowerCaseType})`;
-      div.style.fontSize = '0.4em';
+      div.style.fontSize = '0.9em';
       subContainer.appendChild(div);
 
       // Every 10 divs, create a new sub-container
@@ -138,9 +138,10 @@ const dataPromise = fetchData(myJson)
 
     function createButton(category, color, className) {
       const button = document.createElement('button');
-      button.textContent = `Toggle ${category}`;
+      button.textContent = `${category}`;
       button.style.backgroundColor = color;
       button.style.border = 'none'; // Remove the border
+      button.style.padding = '0.5em'; // Remove the border
       button.addEventListener('click', () => {
         const spans = document.querySelectorAll(`.${className}`);
         spans.forEach(span => {
@@ -192,11 +193,12 @@ function countWords(data) {
   });
 
   // Display the counts
-  const app = d3.select('#app');
-  const countDisplay = app.append('div').attr('class', 'count-display');
+  const app = d3.select('#appContainer');
+  const chartContainer = d3.select('#chartContainer').attr('class', 'count-display');;
+  
 
   // Create a rect for historical count
-  countDisplay.append('div')
+  chartContainer.append('div')
     .attr('class', 'rect-container')
     .append('div')
     .attr('class', 'rect historical')
@@ -205,7 +207,7 @@ function countWords(data) {
     .text(`Historical Count: ${historicalCount}`);
 
   // Create a rect for political count
-  countDisplay.append('div')
+  chartContainer.append('div')
     .attr('class', 'rect-container')
     .append('div')
     .attr('class', 'rect political')
@@ -213,7 +215,7 @@ function countWords(data) {
     .style('background-color', 'blue')
     .text(`Political Count: ${politicalCount}`);
     
-  countDisplay.append('div')
+    chartContainer.append('div')
     .attr('class', 'rect-container')
     .append('div')
     .attr('class', 'rect social')
@@ -221,7 +223,7 @@ function countWords(data) {
     .style('background-color', 'green')
     .text(`Social Count: ${socialCount}`);
   
-  countDisplay.append('div')
+    chartContainer.append('div')
     .attr('class', 'rect-container')
     .append('div')
     .attr('class', 'rect gender')
@@ -236,7 +238,7 @@ function countWords(data) {
     if (subContainer.children.length > 0) {
       fragment.appendChild(subContainer);
     }
-    mainContainer.node().appendChild(fragment);
+    mainContainer.append(() => fragment);
   
     // You can call processRita here if you want to process the fetched data
     // processRita(data.someTextProperty);
