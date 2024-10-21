@@ -3,10 +3,8 @@
 
 body {
   margin: 0;
-  padding: 0.5em 3em 0.5em 3em;
   background: #000;
   color:white;
-  font-family:"DM Sans", sans-serif;
 }
 
 .loading{
@@ -15,27 +13,29 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3.5em;
+  font-family:"DM Sans", sans-serif;
+
 }
 
-.main{
-  display: flex;
-  width: 100%;
-  width: 100%;
-  flex-direction: column;
-  align-items: flex-start;
+.mainBodyContent{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
 }
 
 .menu{
   display: flex;
-  height: 3.75rem;
+  height:5%;
   align-items: center;
   flex-shrink: 0;
   align-self: stretch;
   font-size: 1.5em;
-
+  padding: 0.4em 0.9em ;
   text-align: justify;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
+  font-family:"DM Sans", sans-serif;
+
 }
 
 .menu-left{
@@ -50,7 +50,16 @@ body {
   align-items: center;
   gap: 1.25rem;
   align-self: stretch;
-  
+}
+
+.main{
+  display: flex;
+  width: auto;
+  height: 95%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.4em 1.8em ;
+  font-family: "Space Mono", "DM Sans", sans-serif;
 }
 
 .main-content-section{
@@ -59,8 +68,6 @@ body {
   align-items: flex-start;
   flex: 1 0 0;
   align-self: stretch;
-  height: 100%;
-  font-family: "Space Mono";
 }
 
 .main-viz{
@@ -69,20 +76,22 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 1.5625rem;
-  
+  height:fit-content;
   align-self: stretch;
+  height: 95%;
 }
 
 .main-viz-container{
   display: flex;
+  height: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0px;
-  height: 80vh;
   overflow: hidden;
   scroll-behavior: smooth;
   overflow-y: auto;
   gap: 15px;
+  
 }
 
 .btns{
@@ -91,7 +100,9 @@ body {
   flex-direction: row;
   align-items: flex-start;
   align-self: stretch;
-  border: 1px solid #FFF;
+  border-top: 0.2px solid #FFF;
+  border-bottom: 0.2px solid #FFF;
+
 }
 
 .button-container{
@@ -101,6 +112,7 @@ body {
   gap: 0.875rem;
   align-self: stretch;
   flex-wrap: wrap;
+
 }
 
 .main-text-container{
@@ -113,16 +125,22 @@ body {
 }
 
 .sub-container{
-  width: 320px;
+  width: 250px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  cursor:crosshair;  
+  cursor:crosshair;
+  flex-direction: column;
+  
+}
+
+.sub-container :hover{
+  background: rgb(217, 217, 217);
+  color: black;
 }
 
 .sec-viz-container{
   display: flex;
-  height:fit-content;
   padding: 0.5rem 0rem;
   align-items: flex-start;
   align-self: stretch;
@@ -130,9 +148,10 @@ body {
 
 .chartContainer{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content:space-between;
   width: 100%;
+  font-size: 0.7em;
 }
 
 .count-display{
@@ -146,4 +165,15 @@ body {
 
 .notHighlight{
   opacity: 80%;
+}
+
+button{
+  font-family: "Space Mono", "DM Sans", sans-serif;
+  font-size: 0.7em;
+}
+
+button :hover{
+  background: white;
+  color:black;
+  font-size: 0.7em;
 }

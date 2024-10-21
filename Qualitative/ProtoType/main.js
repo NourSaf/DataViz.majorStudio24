@@ -36,7 +36,6 @@ let gender = [
   "misogyny", "male dominance", "subordination", "sexuality", "gender norms", "gender binary"
 ]
 
-
 async function fetchData(url) {
   try {
     const response = await fetch(url);
@@ -44,7 +43,7 @@ async function fetchData(url) {
       throw new Error(`Network response was not ok (status ${response.status})`);
     }
     const data = await response.json(myJson);   
-    return data.slice(0, 200);
+    return data.slice(0, 102);
   } catch (error) {
     console.error('Error fetching data:', error);
     throw error; 
@@ -64,8 +63,11 @@ function hideLoading() {
 
 showLoading();
 
-const historyColor = "rgb(203, 96, 64)";
-const politicColor = "rgb(37, 113, 128)";
+const historyColor = "rgb(80, 255, 168)";
+const politicColor = "rgb(111, 154, 255)";
+const genderColor = "rgb(187, 255, 97)";
+const socialColor = "rgb(247, 192, 96)";
+
 
 const dataPromise = fetchData(myJson)
   .then(data => {
@@ -82,6 +84,7 @@ const dataPromise = fetchData(myJson)
   let subContainer = document.createElement('div');
   subContainer.className = 'sub-container';
   
+  
   // Loop through data and return only the name property
   const names = data.map(item => item.name);
   const type = data.map(item => item.objectType);
@@ -96,7 +99,9 @@ const dataPromise = fetchData(myJson)
     let lowerCaseName = name.toLowerCase();
     let tokens = lowerCaseName.split(' ');
     console.log('this is my tokens', tokens);
+    div.className = 'sub-div-text';
     div.style.fontSize = '0.5em';
+    div.style.padding = "0.8em"
     subContainer.appendChild(div);
 
     if ((index + 1) % 1 === 0) {
@@ -117,11 +122,11 @@ const dataPromise = fetchData(myJson)
         span.classList.add('political');
       } else if (social_and_cultural_ideologies.some(w => token.toLowerCase() === w.toLowerCase())) {
         span.textContent = token;
-        span.style.background = 'green';
+        span.style.background = `${socialColor}`;
         span.classList.add('social');
       } else if (gender.some(w => token.toLowerCase() === w.toLowerCase())) {
         span.textContent = token;
-        span.style.background = 'yellow';
+        span.style.background = `${genderColor}`;
         span.classList.add('gender');
       } else {
         span.textContent = token;
@@ -143,8 +148,21 @@ const dataPromise = fetchData(myJson)
     const button = document.createElement('button');
     button.textContent = `${category}`;
     button.style.backgroundColor = color;
-    button.style.border = 'none'; 
-    button.style.padding = '0.5em';
+    button.style.padding = '0.5em 2.5em 0.5em 2.5em';
+    button.style.borderRadius = '1em'
+    button.style.border = `0.1em solid ${color}`
+
+    button.onmouseover = () => {
+      button.style.backgroundColor = 'black';
+      button.style.color = 'white';
+      button.style.border = `0.1em solid ${color}`
+      button.style.cursor = 'pointer';;
+    };
+    button.onmouseout = () => {
+      button.style.backgroundColor = color;
+      button.style.color = 'black';
+      button.style.border = `0.1em solid ${color}`
+    };
    
     button.addEventListener('click', () => {
       const spans = document.querySelectorAll(`.${className}`);
@@ -164,8 +182,8 @@ const dataPromise = fetchData(myJson)
   if (btns) {
     const buttonContainer = d3.select(btns).append('div').attr('class', 'button-container');
     buttonContainer.node().appendChild(createButton('Politics', `${politicColor}`, 'political'));
-    buttonContainer.node().appendChild(createButton('Gender', 'yellow', 'gender'));
-    buttonContainer.node().appendChild(createButton('Social', 'green', 'social'));
+    buttonContainer.node().appendChild(createButton('Gender', `${genderColor}`, 'gender'));
+    buttonContainer.node().appendChild(createButton('Social', `${socialColor}`, 'social'));
     buttonContainer.node().appendChild(createButton('Historical', `${historyColor}`, 'historical'));
   } else {
     console.error('Element with ID "butnContainer" not found.');
@@ -194,6 +212,7 @@ const dataPromise = fetchData(myJson)
         }
       });
     });
+    
   
     //secondary visualization div structure
     const secVizContainer = app.append('div').attr('class','sec-viz-container')
@@ -216,8 +235,8 @@ const dataPromise = fetchData(myJson)
       .attr('class', 'rect-historical')
       .style('width', `${historicalWidth}%`)
       .style('background-color', `${historyColor}`)
-      .style('padding', '0.2em');
-
+      .style('padding', '0.2em')
+    
     stackedBar.append('div')
       .attr('class', 'rect-political')
       .style('width', `${politicalWidth}%`)
@@ -227,14 +246,49 @@ const dataPromise = fetchData(myJson)
     stackedBar.append('div')
       .attr('class', 'rect-social')
       .style('width', `${socialWidth}%`)
-      .style('background-color', 'green')
+      .style('background-color', `${socialColor}`)
       .style('padding', '0.2em');
 
     stackedBar.append('div')
       .attr('class', 'rect-gender')
       .style('width', `${genderWidth}%`)
-      .style('background-color', 'yellow')
+      .style('background-color', `${genderColor}`)
       .style('padding', '0.2em');
+
+    const textStackedBar = chartContainer.append('div')
+      .attr('class', 'stacked-bar')
+      .style('display', 'flex')
+      .style('width', '100%');
+
+    textStackedBar.append('div')
+      .attr('class', 'rect-historical')
+      .style('width', `${historicalWidth}%`)
+      .style('padding', '0.2em')
+      .text(`Historical words: ${historicalCount}`);
+
+    
+      textStackedBar.append('div')
+      .attr('class', 'rect-political')
+      .style('width', `${politicalWidth}%`)
+      .style('padding', '0.2em')
+      .text(`Potitical words: ${politicalCount}`);
+
+
+
+      textStackedBar.append('div')
+      .attr('class', 'rect-social')
+      .style('width', `${socialWidth}%`)
+      .style('padding', '0.2em')
+      .text(`Soical words: ${socialCount}`);
+      
+
+
+      textStackedBar.append('div')
+      .attr('class', 'rect-gender')
+      .style('width', `${genderWidth}%`)
+      .style('padding', '0.2em')
+      .text(`Gender words: ${genderCount}`);
+
   }
   countWords(data);
 
