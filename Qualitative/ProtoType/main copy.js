@@ -50,7 +50,7 @@ async function fetchData(url) {
       throw new Error(`Network response was not ok (status ${response.status})`);
     }
     const data = await response.json(myJson);   
-    return data.slice(0, 10000);
+    return data.slice(0, 102);
   } catch (error) {
     console.error('Error fetching data:', error);
     throw error; 
@@ -116,7 +116,7 @@ const dataPromise = fetchData(myJson)
         containerPopup.appendChild(popUpdiv);
         console.log("hi you clicked me");
       }
-    })
+    });
 
     
   
@@ -293,12 +293,6 @@ const dataPromise = fetchData(myJson)
       .attr('class', 'stacked-bar')
       .style('display', 'flex')
       .style('width', '100%');
-  
-    stackedBar.append('div')
-      .attr('class', 'rect-gender')
-      .style('width', `${genderWidth}%`)
-      .style('background-color', `${genderColor}`)
-      .style('padding', `${barPadding}`);
 
     stackedBar.append('div')
       .attr('class', 'rect-historical')
@@ -312,12 +306,17 @@ const dataPromise = fetchData(myJson)
       .style('background-color',  `${politicColor}`)
       .style('padding', `${barPadding}`);
 
-
     stackedBar.append('div')
       .attr('class', 'rect-social')
       .style('width', `${socialWidth}%`)
       .style('background-color', `${socialColor}`)
-      .style('padding', `${barPadding}`); 
+      .style('padding', `${barPadding}`);
+
+    stackedBar.append('div')
+      .attr('class', 'rect-gender')
+      .style('width', `${genderWidth}%`)
+      .style('background-color', `${genderColor}`)
+      .style('padding', `${barPadding}`);
 
     const textStackedBar = chartContainer.append('div')
       .attr('class', 'stacked-bar')
@@ -325,30 +324,35 @@ const dataPromise = fetchData(myJson)
       .style('width', '100%');
 
     textStackedBar.append('div')
-      .attr('class', 'rect-gender')
-      .style('width', `${genderWidth}%`)
-      .style('padding', `${barPadding}`)
-      .text(`Gender: ${genderCount}`);
-
-    textStackedBar.append('div')
       .attr('class', 'rect-historical')
       .style('width', `${historicalWidth}%`)
       .style('padding', `${barPadding}`)
-      .text(`History: ${historicalCount}`);
+      .text(`Historical words: ${historicalCount}`);
 
+    
     textStackedBar.append('div')
       .attr('class', 'rect-political')
       .style('width', `${politicalWidth}%`)
       .style('padding', `${barPadding}`)
-      .text(`Potitics: ${politicalCount}`);
+      .text(`Potitical words: ${politicalCount}`);
+
+
 
     textStackedBar.append('div')
       .attr('class', 'rect-social')
       .style('width', `${socialWidth}%`)
       .style('padding', `${barPadding}`)
-      .text(`Soical: ${socialCount}`);
-  }
+      .text(`Soical words: ${socialCount}`);
+      
 
+
+    textStackedBar.append('div')
+      .attr('class', 'rect-gender')
+      .style('width', `${genderWidth}%`)
+      .style('padding', `${barPadding}`)
+      .text(`Gender words: ${genderCount}`);
+
+  }
   countWords(data);
 
   // Append the last sub-container if it has any children
