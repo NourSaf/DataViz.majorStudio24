@@ -118,8 +118,6 @@ const dataPromise = fetchData(myJson)
       }
     })
 
-    
-  
   names.forEach((name, index) => {
     const div = document.createElement('div');
     div.className = 'sub-div-text x1';
@@ -140,8 +138,6 @@ const dataPromise = fetchData(myJson)
       //console.log("----->>> INDEX",index)
     }
     
-  
-
     tokens.forEach(token => { 
       const span = document.createElement('span');
       if (historical_context.some(w => token.toLowerCase() === w.toLowerCase())) {
@@ -249,8 +245,6 @@ const dataPromise = fetchData(myJson)
         console.error('Element with ID "butnContainer" not found.');
       }
 
-
- 
   let historicalCount = 0;
   let politicalCount = 0;
   let socialCount = 0;
@@ -309,7 +303,7 @@ const dataPromise = fetchData(myJson)
     stackedBar.append('div')
       .attr('class', 'rect-political')
       .style('width', `${politicalWidth}%`)
-      .style('background-color',  `${politicColor}`)
+      .style('background-color', `${politicColor}`)
       .style('padding', `${barPadding}`);
 
 
