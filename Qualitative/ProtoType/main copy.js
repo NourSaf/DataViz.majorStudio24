@@ -117,7 +117,6 @@ const dataPromise = fetchData(myJson)
         console.log("hi you clicked me");
       }
     });
-
     
   
   names.forEach((name, index) => {

@@ -107,16 +107,7 @@ const dataPromise = fetchData(myJson)
   console.log("This is Tokenized Names",tokenizedNames)
 
     // Add click event listener to sub-div-text elements
-    const containerPopup = document.querySelector('.main-viz-container');
-    containerPopup.addEventListener('click', (event) => {
-      if (/x/.test(event.target.className)) {
-        const popUpdiv = document.createElement('div');
-        popUpdiv.classList = "popUpDiv";
-        popUpdiv.textContent = event.target.textContent; // Assign the clicked div content
-        containerPopup.appendChild(popUpdiv);
-        console.log("hi you clicked me");
-      }
-    })
+
 
   names.forEach((name, index) => {
     const div = document.createElement('div');
@@ -164,6 +155,16 @@ const dataPromise = fetchData(myJson)
       div.appendChild(document.createTextNode(' ')); // Add space between words
     });;
   }); 
+  const containerPopup = document.querySelector('.main-viz-container');
+  containerPopup.addEventListener('click', (event) => {
+    if (/x/.test(event.target.className)) {
+      const popUpdiv = document.createElement('div');
+      popUpdiv.classList = "popUpDiv";
+      popUpdiv.textContent = event.target.textContent; // Assign the clicked div content
+      containerPopup.appendChild(popUpdiv);
+      console.log("hi you clicked me");
+    }
+  })
   
     function createButton(category, color, className) {
         const button = document.createElement('button');
