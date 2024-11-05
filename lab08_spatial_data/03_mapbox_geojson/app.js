@@ -12,7 +12,7 @@ d3.json('africa.geo.json')
     }
     // https://www.mapbox.com/mapbox-gl-js/api/#accesstoken
     // TODO: add personal mapbox access token
-    mapboxgl.accessToken = 'pk.yourAccessToken'
+    mapboxgl.accessToken = 'pk.eyJ1Ijoibm91ci1zYWZhZGkiLCJhIjoiY20zNHIwajFnMDJsbzJ2cHJtNW1qcDI3aCJ9.rwXcy2b9ybXpTyNNzVJ5fA'
 
     // https://www.mapbox.com/mapbox-gl-js/api/#map
     let map = new mapboxgl.Map({

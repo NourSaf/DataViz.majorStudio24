@@ -3,7 +3,7 @@ import {apiKey} from './ApiKey.js';
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 
 /* to check results  ––––––––>  https://collections.si.edu/search/  */
-const search =  `object_type:Books and language:English+language`;
+const search =  `object_type:Books`;
 
 // array that we will write into
 let myArray = [];

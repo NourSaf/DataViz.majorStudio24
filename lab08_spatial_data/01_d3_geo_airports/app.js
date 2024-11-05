@@ -13,8 +13,10 @@ function height(projection, outline) {
   return dy;
 }
 
+
 /*** our draw function ***/
 function drawMap(world, data) {
+  //topojson? 
   const land = topojson.feature(world, world.objects.land);
   const graticule = d3.geoGraticule10();
   const outline = { type: "Sphere" };

@@ -1,13 +1,13 @@
 //   Register to get your Mapbox access token https://docs.mapbox.com/help/glossary/access-token/
 //   Code from https://docs.mapbox.com/help/tutorials/custom-markers-gl-js/ 
 
-mapboxgl.accessToken = 'pk.yourTokenHere'; // replace with your own access token
+mapboxgl.accessToken = 'pk.eyJ1Ijoibm91ci1zYWZhZGkiLCJhIjoiY20zNHIwajFnMDJsbzJ2cHJtNW1qcDI3aCJ9.rwXcy2b9ybXpTyNNzVJ5fA'; // replace with your own access token
 
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/light-v10',
-  center: [-96, 37.8],
-  zoom: 1
+  center: [-73.9903, 40.7359],
+  zoom: 15
 });
 
 /*** load data ***/
