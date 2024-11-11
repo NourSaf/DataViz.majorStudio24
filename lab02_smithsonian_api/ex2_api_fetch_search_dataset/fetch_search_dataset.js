@@ -3,7 +3,7 @@ import {apiKey} from './ApiKey.js';
 const searchBaseURL = "https://api.si.edu/openaccess/api/v1.0/search";
 
 /* to check results  ––––––––>  https://collections.si.edu/search/  */
-const search =  `object_type:Books`;
+const search =  `data_source:"Smithsonian Libraries" AND object_type:"Books" AND topic:"Politics"`;
 
 // array that we will write into
 let myArray = [];
