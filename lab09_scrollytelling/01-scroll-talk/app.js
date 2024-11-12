@@ -10,25 +10,27 @@ d3.json("./jabberwocky.json").then(data => {
     .html(d => d.join("<br>"));
 
   let sectionPositions = [];
-  section.each(function() {
+  section.each(function () {
     const { top } = this.getBoundingClientRect();
+    const sectionPorps = this.getBoundingClientRect();
+    console.log(sectionPorps)
     sectionPositions.push(top);
   });
 
   // https://vallandingham.me/scroller.html#detecting-the-active-section
   function position() {
-    var pos = window.scrollY - 10;
-    var sectionIndex = d3.bisect(sectionPositions, pos);
-    sectionIndex = Math.min(section.size() - 1, sectionIndex);
+    var pos = window.scrollY - 10; // Get the current vertical scroll position and adjust it slightly
+    var sectionIndex = d3.bisect(sectionPositions, pos); // Determine the current section based on scroll position
+    sectionIndex = Math.min(section.size() - 1, sectionIndex); // Ensure the section index is within bounds
 
     if (state.currentIndex !== sectionIndex) {
       setState({
-        currentIndex: sectionIndex,
+        currentIndex: sectionIndex, // Update the state with the new section index
       });
     }
   }
 
-  window.addEventListener("scroll", position);
+  window.addEventListener("scroll", position); // Add an event listener to call the position function on scroll
 
   draw();
 });
@@ -63,7 +65,7 @@ function setState(nextState) {
 }
 
 function draw() {
-  const { currentIndex } = state;
+  const { currentIndex } = state; // Destructure the currentIndex property from the state object
   console.log('currentIndex', currentIndex)
   const section = d3
     .selectAll(".section")
