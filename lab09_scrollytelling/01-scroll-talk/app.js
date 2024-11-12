@@ -13,13 +13,15 @@ d3.json("./jabberwocky.json").then(data => {
   section.each(function () {
     const { top } = this.getBoundingClientRect();
     const sectionPorps = this.getBoundingClientRect();
-    console.log(sectionPorps)
+    console.log("this is sections",sectionPorps)
     sectionPositions.push(top);
   });
 
   // https://vallandingham.me/scroller.html#detecting-the-active-section
   function position() {
     var pos = window.scrollY - 10; // Get the current vertical scroll position and adjust it slightly
+    const positionY = window.scrollY 
+    console.log("This is Position Y",positionY, "This is pos",pos)
     var sectionIndex = d3.bisect(sectionPositions, pos); // Determine the current section based on scroll position
     sectionIndex = Math.min(section.size() - 1, sectionIndex); // Ensure the section index is within bounds
 

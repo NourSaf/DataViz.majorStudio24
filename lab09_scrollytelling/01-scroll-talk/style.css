@@ -4,6 +4,7 @@ body {
 
 .section {
   margin: 50% 20px;
+  /* height: 50vh; */
   transition: opacity 1s;
 }
 
