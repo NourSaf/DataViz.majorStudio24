@@ -70,21 +70,37 @@ function fetchAllData(url) {
 function addObject(objectData) {  
   
 //undefined check for coutnry 
-let itemName = objectData.title || "Not Specified";
-let objectType = objectData.content.freetext.objectType[0].content 
+// let itemName = objectData.content.freetext.title[0].content || "Not Specified";
+let itemName = objectData.content.descriptiveNonRepeating.title_sort || "not provided";
+console.log(itemName)
 
+let objectType = objectData.content.freetext.objectType[0].content;
 let bookAuthor = (objectData.content.freetext.name && objectData.content.freetext.name.length > 0) ? objectData.content.freetext.name[0].content : "no name";
 let year = objectData.content.freetext.date[0].content || "Not Provided"
 let book_describtion = (objectData.content.freetext.physicalDescription && objectData.content.freetext.physicalDescription.length > 0 )? objectData.content.freetext.physicalDescription[0].content : "Not Provided";
+let language = objectData.content.indexedStructured.language && objectData.content.indexedStructured.language.length > 0 ? objectData.content.indexedStructured.language[0] : "Not Specified";
+
+
+let topics = [];
+if (objectData.content.freetext.topic && objectData.content.freetext.topic.length > 0) {
+  objectData.content.freetext.topic.forEach(function(topic) {
+    topics.push(topic.content);
+  });
+} else {
+  topics.push("Not Specified");
+}
 
 myArray.push({
-    A_id: objectData.id,
-    name: itemName,
-    objectType: objectType,
-    authorName: bookAuthor,
-    bookYear: year,
-    book_physical_details:book_describtion,
-  })
+  A_id: objectData.id,
+  name: itemName,
+  objectType: objectType,
+  authorName: bookAuthor,
+  bookYear: year,
+  book_physical_details: book_describtion,
+  language: language,
+  topic: topics
+});
 }
 
 fetchSearchData(search);
+
