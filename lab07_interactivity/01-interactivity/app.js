@@ -225,7 +225,6 @@ function draw() {
   // where do we start drawing?
   const barX = xScale.range()[0];
 
-
   // update bars based on filteredData
   let bars = d3.select(".bars")
     .selectAll("rect")

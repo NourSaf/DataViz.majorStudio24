@@ -42,6 +42,7 @@ async function dataLoad() {
   
   // we also populate our checkboxes with values from the data
   const checkboxValues = Array.from(new Set(data.map(d => d[CLASS])));
+  console.log("this is Checkbox Value",checkboxValues)
 
   // copy the data into the state variable, add a unique ID for each object and add the filters
   setState({
@@ -61,11 +62,12 @@ function setState(nextState) {
   // console.log("state updated");
   // using Object.assign keeps the state *immutable*
   state = Object.assign({}, state, nextState);
+  console.log("This is my State ---->",state)
   draw();
 }
 
 function onCheckboxChange(d) {
-  console.log(d.target.name)
+  console.log("This is Target Name",d.target.name)
   // first, was the clicked box already checked or not?
   const index = state.filters.checked.indexOf(d.target.name);
   const isBoxChecked = index > -1;
@@ -126,7 +128,7 @@ function onMouseEvent(d) {
 
 // this function sets up everything we can before data loads
 function initializeLayout() {
-  const svgWidth = 0.6 * state.dimensions[0];
+  const svgWidth = 0.5 * state.dimensions[0];
   const svgHeight = state.dimensions[1];
   const margin = 80;
 
